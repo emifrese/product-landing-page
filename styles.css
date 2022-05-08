@@ -1,0 +1,203 @@
+body {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', helvetica;
+}
+
+.container {
+    position: relative;
+}
+
+#header {
+    position: fixed;
+    top:0;
+    width: 100%;
+    min-height: 75px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #eee;
+}
+
+#header-img {
+    width: 20%;
+    padding: 0;
+    margin: 0;
+}
+
+#header-img img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+
+#nav-bar {
+    width: 80%;
+    display: flex;
+    padding: 10px;
+    justify-content: flex-end;
+}
+
+#nav-bar ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+#nav-bar ul li {
+    list-style: none;
+}
+
+#nav-bar a {
+    text-decoration: none;
+    color: black;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+    margin-top: 75px;
+}
+
+.section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section form input {
+    padding: 5px;
+    margin: 5px;
+}
+
+#email {
+    width: 100%;
+}
+
+#submit {
+    width: 50%;
+    font-size: 15px;
+    border: none;
+    background-color: #fd0;
+}
+
+.video-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.video-container iframe {
+    width: 100%;
+    min-height: 225px;
+}
+
+.products-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.product {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    border: 2px solid red;
+}
+
+.level {
+    padding: 15px;
+    width: 100%;
+    background-color: #ccc
+}
+
+
+.product h2, ol {
+    width: 100%;
+    padding: 0;
+}
+
+.product ol li {
+    list-style: none;
+    margin: 10px;
+}
+
+.btn {
+    width: 35%;
+    height: 40px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    background-color: #fd0;
+    border: none;
+
+}
+
+
+@media (min-width: 800px) {
+
+    body {
+        font-size: 24px;
+    }
+
+    #nav-bar ul {
+        width: 100%;
+        font-size: 30px;
+    }
+
+    .section {
+        height: 200px;
+        margin-top: 150px;
+    }
+
+    .section h2 {
+        font-size: 45px;
+    }
+    
+    .section form {
+        width: 50vw;
+    }
+
+    #email {
+        font-size: 25px;
+    }
+
+    #submit {
+        font-size:25px;
+    }
+
+    .product {
+        width: 75%;
+    }
+
+    .video-container iframe {
+        min-height: 450px;
+    }
+}
+
+@media (min-width: 1000px) {
+    body {
+        font-size: 16px;
+    }
+
+    #header {
+        height: 150px;
+    }
+
+    #header-img img {
+        width: 75%;
+    }
+    .product {
+        width: 50%;
+    }
+}
